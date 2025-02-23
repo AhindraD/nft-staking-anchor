@@ -9,6 +9,7 @@ pub struct StakeConfig {
     pub points_per_stake: u8,
     pub max_stake: u8,
     pub rewards_mint_bump: u8,
+    //instead of storing the mint pubkey - just storing bump as PDA derived for the reawrds Mint is deterministic
     pub bump: u8,
 }
 
